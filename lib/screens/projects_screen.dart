@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soldea/screens/my_account.dart';
 import 'create_project.dart';
+import 'project_details.dart';
 
 class ProjectsScreen extends StatefulWidget {
   const ProjectsScreen({Key? key}) : super(key: key);
@@ -210,12 +211,14 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
                           child: FloatingActionButton(
                             onPressed: () {
                               print("view project");
-                              /* Navigator.push(
+                              Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ProjectDetails(),
+                                  builder: (context) => ProjectDetailsScreen(
+                                    
+                                  ),
                                 ),
-                              ); */
+                              );
                             },
                             backgroundColor: clr2,
                             shape: RoundedRectangleBorder(
@@ -291,7 +294,8 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CreateProjectScreen()),
+            MaterialPageRoute(
+                builder: (context) => const CreateProjectScreen()),
           );
         },
         child: const Icon(

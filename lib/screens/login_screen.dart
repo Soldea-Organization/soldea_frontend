@@ -35,8 +35,8 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 // Logo eklenen kısım
                 Container(
-                  width: 150, // Logonun genişliğini ayarlayabilirsiniz
-                  height: 150, // Logonun yüksekliğini ayarlayabilirsiniz
+                  width: 100, // Logonun genişliğini ayarlayabilirsiniz
+                  height: 100, // Logonun yüksekliğini ayarlayabilirsiniz
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
