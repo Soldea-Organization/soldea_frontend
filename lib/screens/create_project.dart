@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:soldea/screens/my_account.dart';
 
@@ -141,8 +139,7 @@ class CreateProjectScreen extends StatelessWidget {
                     showSuccessSnackBar(context);
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: 
-                    startColor,
+                    backgroundColor: startColor,
                     minimumSize: const Size(200, 55),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
